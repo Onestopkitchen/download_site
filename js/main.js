@@ -12,7 +12,23 @@ $(window).on('scroll', function () {
 	}
 });
 
-
+//to toggle between screens
+var resolution="";
+getResolution();
+function getResolution() {
+  resolution = screen.width;
+  if(resolution<500){
+    $("#carouselExampleControls").show();
+    $("#large-screen").hide();
+  }else{
+    $("#carouselExampleControls").hide();
+    $("#large-screen").show();
+  }
+  setTimeout(getResolution, 500);
+}
+$('.carousel').carousel({
+  interval: 2000 
+});
 
 
 
