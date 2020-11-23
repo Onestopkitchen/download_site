@@ -1,8 +1,6 @@
 <?php 
 	
 	$selectedNavItem = explode("/", getcwd());
-
-	$echo count($selectedNavItem);
 ?>
 
 <!DOCTYPE html>
