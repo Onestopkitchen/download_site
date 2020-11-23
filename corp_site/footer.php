@@ -2,11 +2,11 @@
 		<div class="container py-5">
 			<div class="mobile-app">
 				<div class="row">
-					<div class="col-7">
+					<div class="col-xl-7 col-12">
 						<h1 class="super-header">Our Food Super App</h1>
 						<p class="short-intro text-justify">We present you our own app which merges all our brands together. Now order everything from this one single app without any hassle and your order will be delivered at your doorstep.</p>
-						<div class="row">
-							<div class="col">
+						<div class="row desktop">
+							<div class="col-xl col-12">
 								<div class="download-links">
 									<p class="text-white">CLICK HERE TO</p>
 									<div class="google-btn">
@@ -16,37 +16,62 @@
 									<p class="text-white">Scan this QR Code</p>
 								</div>
 							</div>
-							<div class="col">
+							<div class="col-xl col-12">
 								<div class="QRCode">
 									<?php if (dirname(__FILE__) == getcwd()) { ?>
 										<img src="image/mobile-app/QR.png">
-									<?php } else if (count($selectedNavItem) == 5) { ?>
+									<?php } else if (count($selectedNavItem) == 6) { ?>
 										<img src="../image/mobile-app/QR.png">
 									<?php }  ?>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col">
-						<div class="mobile-vertical">
-							<div class="inner-video">
-								<?php if (dirname(__FILE__) == getcwd()) { ?>
-									<video src="image/mobile-app/oskapp.m4v" type="video/mp4" autoplay="true" muted="muted" loop="true"></video>
-								<?php } else if (count($selectedNavItem) == 5) { ?>
-									<video src="../image/mobile-app/oskapp.m4v" type="video/mp4" autoplay="true" muted="muted" loop="true"></video>
-								<?php }  ?>
+					<div class="col-xl col-12">
+						<div class="row">
+							<div class="col">
+								<div class="mobile-vertical">
+									<div class="inner-video">
+									    <?php if (dirname(__FILE__) == getcwd()) { ?>
+										<video src="oskapp.m4v" type="video/mp4" autoplay="true" muted="muted" loop="true"></video>
+											<?php } else if (count($selectedNavItem) == 6) { ?>
+										<video src="../oskapp.m4v" type="video/mp4" autoplay="true" muted="muted" loop="true"></video>
+										<?php }  ?>
+									</div>
+									<?php if (dirname(__FILE__) == getcwd()) { ?>
+										<img src="image/mobile-app/mobile.png">
+									<?php } else if (count($selectedNavItem) == 6) { ?>
+										<img src="../image/mobile-app/mobile.png">
+									<?php }  ?>
+								</div>
 							</div>
-							<?php if (dirname(__FILE__) == getcwd()) { ?>
-								<img src="image/mobile-app/mobile.png">
-							<?php } else if (count($selectedNavItem) == 5) { ?>
-								<img src="../image/mobile-app/mobile.png">
-							<?php }  ?>
+						</div>
+						<div class="row mobile">
+							<div class="col-xl col-12">
+								<div class="download-links">
+									<p class="text-white">CLICK HERE TO</p>
+									<div class="google-btn">
+										<a href='https://play.google.com/store/apps/details?id=com.oskdev_app&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+									</div>
+									<p class="text-white text-center">OR</p>
+									<p class="text-white">Scan this QR Code</p>
+								</div>
+							</div>
+							<div class="col-xl col-12">
+								<div class="QRCode">
+									<?php if (dirname(__FILE__) == getcwd()) { ?>
+										<img src="image/mobile-app/QR.png">
+									<?php } else if (count($selectedNavItem) == 6) { ?>
+										<img src="../image/mobile-app/QR.png">
+									<?php }  ?>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<br/>
-			<div class="main-footer" id="contactus">
+			<div class="main-footer mt-xl-0 mt-5" id="contactus">
 				<div class="row text-white footer-1 pt-4">
 					<div class="col-xl-4 col-12">
 						<h4 class="font-weight-bold">Contact Us</h4>
@@ -57,39 +82,39 @@
 							<p><i class="fas fa-envelope-square"></i>&nbsp;oskguwahati@gmail.com</p>
 						</div>
 					</div>
-					<div class="col-xl-3 col-4 mt-xl-0 mt-2">
+					<div class="col-xl-3 col-6 mt-xl-0 mt-2">
 						<h4 class="font-weight-bold text-center">Explore</h4>
 						<ul class="quickLinks mt-xl-4 text-center">
 			          		<?php if (dirname(__FILE__) == getcwd()) { ?>
 			          			<a class="text-white" href="OSK">OSK</a>
-			          		<?php } else if (count($selectedNavItem) == 5) { ?>
+			          		<?php } else if (count($selectedNavItem) == 6) { ?>
 			          			<a class="text-white" href="../OSK">OSK</a>
 		          			<?php } ?>
 				          	</li>
 				          	<li>
 					      	<?php if (dirname(__FILE__) == getcwd()) { ?>
 					        	<a class="text-white" href="HEALTHYCO">HealthyCo</a>
-					        <?php } else if (count($selectedNavItem) == 5) { ?>
+					        <?php } else if (count($selectedNavItem) == 6) { ?>
 					        	<a class="text-white" href="../HEALTHYCO">HealthyCo</a>
 				        	<?php } ?>
 					      	</li>
 				          	<li>
 			          		<?php if (dirname(__FILE__) == getcwd()) { ?>
 				          		<a class="text-white" href="HOUSEOFBIRIYANI">House of Biriyani</a>
-		          		 	<?php } else if (count($selectedNavItem) == 5) { ?>
+		          		 	<?php } else if (count($selectedNavItem) == 6) { ?>
 			          		 	<a class="text-white" href="../HOUSEOFBIRIYANI">House of Biriyani</a>
 		          		 	<?php } ?>
 				          	</li>
 				          	<li>
 				          		<?php if (dirname(__FILE__) == getcwd()) { ?>
 				          		<a class="text-white" href="OSKPLUS">OSK Plus</a>
-				          	<?php } else if (count($selectedNavItem) == 5) { ?>
+				          	<?php } else if (count($selectedNavItem) == 6) { ?>
 				          		<a class="text-white" href="../OSKPLUS">OSK Plus</a>
 		          			<?php } ?>
 				          	</li>
 						</ul>
 					</div>
-					<div class="col-xl-2 col-4 mt-xl-0 mt-2">
+					<div class="col-xl-2 col-6 mt-xl-0 mt-2">
 						<h4 class="font-weight-bold text-center">Follow</h4>
 						<ul class="socialLinks mt-xl-4">
 							<li class="text-white">
@@ -120,7 +145,6 @@
 				</div>
 			</div>
 			<br/>
-			
 		</div>
 	</section>
 	<section class="end w-100" style="background: black">
@@ -128,7 +152,7 @@
 			<div class="footer-end">
 				<div class="row">
 					<div class="col-lg-6">
-						<p class="text-small float-left text-white" style="height: 15px; margin-top: 10px">One Stop Kitchen &copy;2020</p>
+						<p class="text-small float-left text-white" style="height: 15px; margin-top: 10px">OneStopKitchen &copy;2020</p>
 					</div>
 					<div class="col-lg-6 float-right">
 						<p class="text-small float-right text-white" style="height: 15px; margin-top: 10px">Developed By DevTeq</p>
@@ -146,21 +170,21 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/mdb.min.js"></script>
-	<script type="text/javascript" src="js/jquery.arctext.js"></script>
+	<script type="text/javascript" src="js/jquery.arctext.min.js"></script>
 	<script type="text/javascript" src="js/flickity.js"></script>
-	<script type="text/javascript" src="js/scroll.js"></script>
+	<script type="text/javascript" src="js/scroll.min.js"></script>
 	<script type="text/javascript" src="js/anime.min.js"></script>
 	<script type="text/javascript" src="js/script.min.js"></script>
 	<?php
-	} else if (count($selectedNavItem) == 5) {
+	} else if (count($selectedNavItem) == 6) {
 	?>
 	<script type="text/javascript" src="../js/popper.min.js"></script>
 	<script type="text/javascript" src="../js/jquery.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="../js/mdb.min.js"></script>
-	<script type="text/javascript" src="../js/jquery.arctext.js"></script>
+	<script type="text/javascript" src="../js/jquery.arctext.min.js"></script>
 	<script type="text/javascript" src="../js/flickity.js"></script>
-	<script type="text/javascript" src="../js/scroll.js"></script>
+	<script type="text/javascript" src="../js/scroll.min.js"></script>
 	<script type="text/javascript" src="../js/anime.min.js"></script>
 	<script type="text/javascript" src="../js/script.min.js"></script>
 	<?php
