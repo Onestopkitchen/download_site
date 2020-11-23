@@ -113,7 +113,7 @@
 	            <li class="nav-item">
 	                <a class="nav-link <?php if (dirname(__FILE__) != getcwd()) { echo 'active'; } ?>" href="#">BLOG</a>
 	            </li>
-	            <li class="nav-item <?php if (dirname(__FILE__) != getcwd()) { echo 'active'; } ?>">
+	            <li class="nav-item <?php if (count($selectedNavItem) == 6 && $selectedNavItem[5] == 'AboutUs') { echo 'active'; } ?>">
 	            	<?php if (dirname(__FILE__) == getcwd()) { ?>
 	                	<a class="nav-link <?php if (dirname(__FILE__) != getcwd()) { echo 'change'; } ?>" href="AboutUs">ABOUT-US</a>
 	                <?php } else if (count($selectedNavItem) == 6) { ?>
