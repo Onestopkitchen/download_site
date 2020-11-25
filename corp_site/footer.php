@@ -131,7 +131,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-xl-2 col-4 mt-xl-0 mt-2">
+					<div class="col-xl-2 col-6 mt-xl-0 mt-2">
 						<h4 class="font-weight-bold text-center">Legal</h4>
 						<ul class="legalLinks mt-xl-4">
 							<li class="text-white">
