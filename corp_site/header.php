@@ -1,6 +1,7 @@
 <?php 
 	
 	$selectedNavItem = explode("/", getcwd());
+	print_r($selectedNavItem)
 ?>
 
 <!DOCTYPE html>
